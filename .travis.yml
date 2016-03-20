@@ -1,10 +1,13 @@
 language: ruby
-
 rvm:
- - 2.3.0
-
+- 2.3.0
 script:
- - bundle exec rake db:migrate --trace
- - RAILS_ENV=test bundle exec rake db:migrate --trace
- - bundle exec rake db:test:prepare
- - bundle exec rspec -fd spec/
+- bundle exec rake db:migrate --trace
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec -fd spec/
+deploy:
+  provider: heroku
+  app: livetags
+  api_key:
+    secure: dqJs9VkqCkC67NTJtY4js59EvvDkPLAZhZvf0HvUCgyxUkOGScjn24e9xULeUEqvq9/XpPYor6KzWuU2BRA0a+WOpAqvdIFKdIzaqTl/XBo21gLOxuZgfuwOy127m9dAV9kkHD510I4qQB7EwNiYGP844QVitg4jhZWbmZqgqKMTmPbgXXuNyCoI4v0HRnFKt8DFVjHxfU+JBEMnZVnzBX8564dXDWqlmhgI9CnLPbrLaWHFzob+yLCTXmFlGEKA0Otu41iRsxw/i1OPcUVyBhyJbjadsg08zr8SPX/dsQFeq4m/FTTPDAxsoUzuRPu0Ri+IYCdU2sTVLoJCW29su9a1tifoIZQUYtxnRwHOfwvBDjHqL72vKizuX+Vy5HFap6l3lbTIgtu0OM43Tpy3ZXiX0FczLI4R95SEqf4MCaBgrdWGy5NOnJbzdmuAs8+rusqRPCmRnRkR5ju5nEo1YrQfoeOAYaz7vHrPYvB4+5zmWNxvltkhsPt0o4/ERaOISXBQV9PFVShWmHIYroa6EM3PxcUDMeENg5c2ksdJv3PR2Mlw1mPOZB6kRqEVCEC9jml217TsMY4oRDYs7sQNxEZcPZgeaOzC0Gw+WeOEjZQvDDrq3CeEzYv/8h6PCFlNVURT91HfxlsQQwQrmAtSL8UFYKyk3p/WnRpHS14JWZ0=
