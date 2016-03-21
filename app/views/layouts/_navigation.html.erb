@@ -1,4 +1,11 @@
 <div class="navbar">
-  <%= link_to 'Login', '#' %>
-  <%= link_to 'Signup', '#' %>
+  <%= link_to 'Root', root_path %>
+
+  <% if current_user %>
+    <%= link_to current_user, current_user %>
+    <%= link_to 'Logout', signout_path, method: :delete if current_user %>
+  <% else %>
+    <%= link_to 'Login', signin_path %>
+    <%= link_to 'Signup', signup_path %>
+  <% end %>
 </div>

@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+.navbar {
+    padding: 10px;
+    background: #EFEFEF;
+}
+
+.devinfo {
+    border-style: solid;
+    padding: 10px;
+}

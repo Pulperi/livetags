@@ -1,0 +1,9 @@
+<h1><%= @user %></h1>
+
+<% if show_devinfo %>
+  <div class="devinfo">
+    name: <%= @user.name %>
+    <br>
+    username: <%= @user.username %>
+  </div>
+<% end %>
