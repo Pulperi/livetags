@@ -9,7 +9,7 @@
     - Github repo, travis, heroku setup, etc
 
 - 21.03.2016 (4h)
-    Käyttäjämallin luomista
-    Käyttäjien luominen
+    Käyttäjämalli  
+    Käyttäjien luominen  
     Sessionhallinta 
     

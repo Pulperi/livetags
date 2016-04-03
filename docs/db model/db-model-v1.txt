@@ -1,0 +1,12 @@
+http://yuml.me/edit/6f4a701b
+
+[User|username:string;name:string;password_digest]
+[Image|img-hash:string;delete-hash:string]
+[Bookmark|link-url:string]
+[Memo|content:string;date:Date]
+
+[User]<>1-bookmarks*>[Bookmark]
+[User]<>1-images*>[Image]
+[Bookmark]<>1-thumbnail>[Image]
+[User]<>1-notes*>[Memo]
+[Memo]<>1-thumbnail>[Image]
