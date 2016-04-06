@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
   validate :password, :is_valid_password
   has_secure_password
 
+  has_many :media_tags
+
   def to_s
     name.length < 16 ? name : name[0, 13].rstrip << '..'
   end

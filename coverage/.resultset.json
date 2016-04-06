@@ -5,6 +5,62 @@
         1,
         null
       ],
+      "/home/henri/RailsProjects/livetags/app/helpers/static_pages_helper.rb": [
+        1,
+        null
+      ],
+      "/home/henri/RailsProjects/livetags/app/controllers/static_pages_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/henri/RailsProjects/livetags/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/henri/RailsProjects/livetags/app/models/image.rb": [
+        1,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
       "/home/henri/RailsProjects/livetags/app/models/user.rb": [
         1,
         1,
@@ -64,7 +120,11 @@
         0,
         0
       ],
-      "/home/henri/RailsProjects/livetags/app/controllers/users_controller.rb": [
+      "/home/henri/RailsProjects/livetags/app/controllers/images_controller.rb": [
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -113,7 +173,20 @@
         0,
         0
       ],
-      "/home/henri/RailsProjects/livetags/app/controllers/application_controller.rb": [
+      "/home/henri/RailsProjects/livetags/app/controllers/users_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -150,6 +223,6 @@
         0
       ]
     },
-    "timestamp": 1458579922
+    "timestamp": 1459796892
   }
 }

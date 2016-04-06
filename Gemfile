@@ -7,13 +7,13 @@ gem 'rails', '4.2.5'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'byebug'
   gem 'better_errors'
   gem 'spring'
   gem 'rspec-rails', '~> 3.0'
 end
 
 group :development do
-  gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'rails_layout'
   gem 'rack-mini-profiler'
@@ -71,3 +71,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'httparty'
 gem 'jquery-turbolinks'
 gem 'omniauth-github'
+
+# Bower
+gem 'bower-rails'
+gem 'angular-rails-templates'

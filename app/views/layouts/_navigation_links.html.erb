@@ -1,0 +1,37 @@
+<%# add navigation links to this file %>
+<li role="presentation" class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+    Media<span class="caret"></span>
+  </a>
+
+  <ul class="dropdown-menu">
+    <% if current_user %>
+      <li><%= link_to 'List my media', media_tag_path(current_user.name) %></li>
+      <li><%= link_to 'List my media as json', "#{media_tag_path(current_user.name)}.json" %></li>
+    <% end %>
+    <li><%= link_to 'List all media', media_tags_path %></li>
+    <li><%= link_to 'List all media as json', "#{media_tags_path}.json" %></li>
+  </ul>
+</li>
+
+<% if current_user %>
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <%= current_user.name %><span class="caret"></span>
+      </a>
+
+      <ul class="dropdown-menu">
+        <li><%= link_to 'User info', current_user %></li>
+        <li><%= link_to 'Signout', signout_path, method: :delete %></li>
+      </ul>
+    </li>
+<% else %>
+    <li role="presentation" class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        Auth<span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><%= link_to 'Signin', signin_path %></li>
+        <li><%= link_to 'Signup', signup_path %></li>
+      </ul>
+    </li>
+<% end %>
