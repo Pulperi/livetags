@@ -38,13 +38,14 @@ stuff = [
 
 controllers = angular.module('controllers',[])
 controllers.controller("LiveTagsController", [ '$scope', '$routeParams', '$location',
-  ($scope,$routeParams,$location) ->
-    $scope.search = (keywords)->  $location.path("/").search('keywords', keywords)
-    $scope.hide = !stuff.isEmpty
-    if $routeParams.keywords
-      keywords = $routeParams.keywords.toLowerCase()
-      $scope.collection = stuff.filter (media)-> media.link_url.toLowerCase().indexOf(keywords) != -1
-    else
-      $scope.collection = stuff
+  ($scope, $routeParams, $location) ->
+    $scope.search = (keywords)->
+      $location.path("/").search('keywords', keywords)
+      $scope.hide = !stuff.isEmpty
+      if $routeParams.keywords
+        keywords = $routeParams.keywords.toLowerCase()
+        $scope.collection = stuff.filter (media)-> media.link_url.toLowerCase().indexOf(keywords) != -1
+      else
+        $scope.collection = stuff
 
 ])
